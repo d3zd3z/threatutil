@@ -2,42 +2,6 @@
 
 
 [[projects]]
-  name = "github.com/andygrunwald/go-jira"
-  packages = ["."]
-  revision = "acbc88d59582a4885dbd82fd775caa7c15245171"
-  version = "v1.0.0"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/bgentry/go-netrc"
-  packages = ["netrc"]
-  revision = "9fd32a8b3d3d3f9d43c341bfe098430e07609480"
-
-[[projects]]
-  name = "github.com/fatih/structs"
-  packages = ["."]
-  revision = "a720dfa8df582c51dee1b36feabb906bde1588bd"
-  version = "v1.0"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/google/go-querystring"
-  packages = ["query"]
-  revision = "53e6ce116135b80d037921a7fdd5138cf32d7a8a"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/kr/text"
-  packages = ["."]
-  revision = "7cafcd837844e784b526369c9bce262804aebc60"
-
-[[projects]]
-  name = "github.com/trivago/tgo"
-  packages = ["tcontainer","treflect"]
-  revision = "e4d1ddd28c17dd89ed26327cf69fded22060671b"
-  version = "v1.0.1"
-
-[[projects]]
   branch = "v2"
   name = "gopkg.in/yaml.v2"
   packages = ["."]
@@ -46,6 +10,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "9ff69bfab33f88a105e8fb4c12656a583739712b044251b3b8f7fe757b5d69bb"
+  inputs-digest = "9aeea773a778bfcaf7a592cba29482cc41403ac6642e31709d7a2ad5b9562347"
   solver-name = "gps-cdcl"
   solver-version = 1
