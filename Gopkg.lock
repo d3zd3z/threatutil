@@ -26,14 +26,26 @@
   revision = "53e6ce116135b80d037921a7fdd5138cf32d7a8a"
 
 [[projects]]
+  branch = "master"
+  name = "github.com/kr/text"
+  packages = ["."]
+  revision = "7cafcd837844e784b526369c9bce262804aebc60"
+
+[[projects]]
   name = "github.com/trivago/tgo"
   packages = ["tcontainer","treflect"]
   revision = "e4d1ddd28c17dd89ed26327cf69fded22060671b"
   version = "v1.0.1"
 
+[[projects]]
+  branch = "v2"
+  name = "gopkg.in/yaml.v2"
+  packages = ["."]
+  revision = "287cf08546ab5e7e37d55a84f7ed3fd1db036de5"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "253836dc161bbd5fe4baedfc168154c05630b18d7e5e83f272a250c3cce272ce"
+  inputs-digest = "9ff69bfab33f88a105e8fb4c12656a583739712b044251b3b8f7fe757b5d69bb"
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -1,0 +1,524 @@
+THREAT-1:
+  summary: Code run before bootloader
+  desc: >-
+    The MCU can be tricked into performing operations before the
+    bootloader is run.  This can be done through a debug interface,
+    for example.
+  resp: >-
+    This threat requires access to the hardware. Protecting access
+    to the components on the device will hinder this attack.
+    Debug interfaces can be fused out, or not routed to accessible
+    locations on the board.
+  sec: >-
+    Deployed hardware shall be configured so that the bootloader is
+    the first code run. Any debug interfaces that would allow this
+    boot to be intercepted shall be disabled before deployment.
+  imp: >-
+    Arbitrary code can be run on the device allowing sensor data
+    to be spoofed. Can also be used as an attack vector of other
+    connected devices in the system.
+
+THREAT-2:
+  summary: Bootloader modification
+  desc: >-
+    An attacker could modify the code of the bootloader itself.
+  resp: >-
+    This threat could be done either through a hardware attack
+    (debugging port), or via software that is able to write to the
+    flash device.  Preventing debugger access is covered in THREAT-1.
+  sec: >-
+    Deployed hardware shall be configured such that the bootloader
+    code is in write protected memory.  This configuration shall be
+    done through some type of fuse that is irreversible.
+  imp: >-
+    Arbitrary code can be run on the device.
+
+THREAT-3:
+  summary: Image verification could be vulnerable
+  desc: >-
+    The mechanism that the bootloader uses to validate that the
+    primary image is valid could be vulnerable.
+  resp: >-
+    The design of robust hashing and signatures is beyond the scope of
+    this document.  As such, it is important that only algorithms that
+    are widely understood be used.
+  sec: >-
+    The bootloader shall use well-known hash and digital signature
+    algorithms.  Algorithms shall be chosen that are believed to be
+    resilient for the expected lifetime of the device.
+  imp: >-
+    The signature could be spoofed, allowing arbitrary code execution.
+
+THREAT-4:
+  summary: Root signing key leak
+  desc: >-
+    The bootloader signing key could be subverted or leaked. For
+    example, an attack at the factory could make a clandestine copy
+    of the private signing key and use it later to sign application
+    images.
+  resp: >-
+    Although a realistic attack, this is mostly beyond the scope of
+    this document.  Mainly, it is important that tooling available
+    provide the necessary functionality for the parties involved to
+    protect the key.  At a minimum, the key signing should be able to
+    use some type of key protection hardware.
+  sec: >-
+    The image signing utilities shall support industry standard key
+    protection hardware.
+  imp: >-
+    Arbitrary code execution.
+
+THREAT-5:
+  summary: Code modification after signing
+  desc: >-
+    Once the main application code has started running, the signature
+    is not rechecked. If the code in flash is changed at this point,
+    the new code would then execute.
+  resp: >-
+    In order to be able to perform an upgrade, the upgrade app needs
+    to be able to write to the second slot.  Ideally, it will be
+    possible to write protect the main slot after the bootloader has
+    done any updates.
+  sec: >-
+    Slot 0 (the live image) shall be write protected during normal
+    operation.
+  imp: >-
+    Alternative code can be run until the next boot.
+
+THREAT-6:
+  summary: Insufficient Signature
+  desc: >-
+    If there is any part of the image used to control the program
+    counter that is not included in the signature, this could be
+    modified out of band, resulting in an undesirable control flow.
+  resp: >-
+    It is important that the signature of the boot image cover every
+    aspect of the running of this code.  It should cover both code and
+    initialized data, as well as any data structure, IRQ vector
+    tables, and other items that are used by the code.
+  sec: >-
+  imp: >-
+    Alternate date modifications could cause the application to
+    execute different behavior.
+
+THREAT-7:
+  summary: Corrupt application image
+  desc: >-
+    The main application image could be corrupted, resulting in an
+    unbootable system, since the bootloader would refuse to run the
+    system.
+  resp: >-
+    If an attacker is able to modify the main application image, the
+    system will be rendered unbootable.  Current MCUboot code assumes
+    that the image is not modified after it has been written.  It is
+    also possible for flash to become corrupt over time.
+  sec: >-
+    None
+  imp: >-
+    Denial of service.  Non-functioning device.
+
+THREAT-8:
+  summary: Update to wrong slot
+  desc: >-
+    During software update, an update application places the new
+    image in a secondary slot. It could be tricked into writing
+    the image to the main image slot instead of the update slot,
+    bypassing signature checks on the running image.
+  resp: >-
+    Overlap with THREAT-5.  As long as the main image slot is write
+    protected, the update app should not be able to write to it.
+  sec: >-
+    None
+  imp: >-
+    Denial of service.
+
+THREAT-9:
+  summary: Overfrequent upgrade
+  desc: >-
+    The update app could be tricked into writing an image
+    overly-frequently, prematurely wearing the flash device. It could
+    also prevent normal functioning of the device because it would be
+    constantly updating.
+  resp: >-
+    The software update app and protocol needs to be analyzed to
+    ensure that updates happen neither too infrequently, or too
+    frequently.
+  sec: >-
+    An analysis shall be performed of the software update app and
+    protocol to ensure that updates are performed in a timely manner,
+    but also are not performed excessively when under attack.
+  imp: >-
+    Denial of service.
+
+THREAT-10:
+  summary: Marker prevention
+  desc: >-
+    The update app could be prevented from writing the update marker,
+    which would prevent the update from taking place.
+  resp: >-
+    The update marker is currently written to the same region of flash
+    as the update slot.  This is mostly mitigated through review of
+    this code, and general vulnerability prevention.
+  sec: >-
+    The software update application shall be audited to ensure correct
+    operation, even under attack.
+  imp: >-
+    Old code (with possible vulnerabilities) will continue to run.
+
+THREAT-11:
+  summary: Marker with no upgrade
+  desc: >-
+    The app could be tricked into writing the update marker when
+    there is no upgrade, resulting in a slower startup on subsequent
+    boot.
+  resp: >-
+    Not a significant impact.
+  sec: >-
+    None
+  imp: >-
+    Minimal.  Subsequent reboot is slightly longer.
+
+THREAT-12:
+  summary: Unnecessary reboots
+  desc: >-
+    The update app could be tricked into rebooting unnecessarily,
+    resulting in denial of service.
+  resp: >-
+    Since the update app needs the ability to reboot, it could be
+    tricked into rebooting when not needed.
+  sec: >-
+    Same as THREAT-10
+  imp: >-
+    Denial of service.
+
+THREAT-13:
+  summary: Not reboot after upgrade
+  desc: >-
+    After an upgrade has been downloaded, the upgrade app must
+    reboot the device to install the update. If it could be tricked
+    into delaying this reboot, there is the potential for fixed
+    vulnerabilities to continue to be runnable.
+  resp: >-
+    Same response as THREAT-10/12.
+  sec: >-
+    Same as THREAT-10.
+  imp: >-
+    Old code (with possible vulnerabilities) will continue to run.
+
+THREAT-14:
+  summary: Corrupt upgrade
+  desc: >-
+    If the image in the second slot is corrupt, the bootloader may
+    take additional time to verify that the signature is invalid.
+  resp: >-
+    Time to verify the second image is similar to the time to verify
+    the primary image, and the impact is minimal.
+  sec: >-
+    None
+  imp: >-
+    Slightly longer startup
+
+THREAT-15:
+  summary: Bootloader defects
+  desc: >-
+    Defects in the bootloader could result in a corrupt main image,
+    resulting in an unbootable system.
+  resp: >-
+    The image swap implemented in MCUboot is complicated.  A untimely
+    power loss could provoke defects in this code causing the main
+    image to be corrupted.  An alternative solution is to not use
+    swapping, but only image updates, but this makes THREAT-7 more
+    likely, as well as risks updating to an image that is
+    non-functional, but signed.
+  sec: >-
+    The bootloader code shall contain a test framework to simulate
+    untimely resets and power loss.
+  imp: >-
+    Denial of service
+
+THREAT-16:
+  summary: Swap code defects
+  desc: >-
+    Defects in the image swapping code could allow an untimely power
+    loss to result in either a corrupt/unbootable image, or the wrong
+    image in place that hasn't been verified.
+  resp: >-
+    A more specific version of THREAT-15.  The swap code is most of
+    the complexity in the bootloader. Defects in this code will result
+    in a system that is unbootable.  It is also possible that a part
+    could interrupt the swap, modify some of the code in flash, and
+    the bootloader would then continue to install this incorrect code,
+    even with an invalid signature.
+  sec: >-
+    The bootloader shall verify the image signature on every boot, and
+    not just as part of the upgrade.
+  imp: >-
+    Arbitrary code execution.
+
+THREAT-17:
+  summary: Missed upgrade
+  desc: >-
+    After an upgrade, the bootloader gives the application a test
+    boot. If it does not mark itself as good, the bootloader will
+    roll the image back on the next boot. An untimely powerdown could
+    force this rollback preventing the upgrade from happening.
+  resp: >-
+    The image upgrade process is fragile, if after the bootloader
+    finishes the swap, but before the application has marked itself
+    bad, there is a reboot, the bootloader will consider the image to
+    have failed, and rollback to the previous version.  Depending on
+    how the upgrade app is written, this will result in either the old
+    image running, or the upgrade being repeated, possibly resulting
+    in a loop.  The tradeoffs here need further analysis.
+  sec: >-
+    Further analysis.
+  imp: >-
+    Old code running.  Denial of service preventing booting to normal
+    system.
+
+THREAT-18:
+  summary: Upgrade storm
+  desc: >-
+    If after a rollback, the system immediately detects that an
+    upgrade is available, it could result in a device that upgrades
+    continuously.
+  resp: >-
+    Related to THREAT-17.  If the attacker can prevent boot, the
+    system will rollback, and then attempt to upgrade again.
+  sec: >-
+    The upgrade app/service shall have a mechanism to back-off
+    attempts at upgrade to allow the system to operate, even with an
+    old version.
+  imp: >-
+    Denial of service.  Old version running.
+
+THREAT-19:
+  summary: Anti-rollback
+  desc: >-
+    An older image could be sent as an upgrade, causing the
+    bootloader to downgrade to an older version, possibly reverting
+    security updates.
+  resp: >-
+    Rollback attacks are a common attack.  Concerns about needing to
+    revert if bugs are discovered can be addressed by re-labeling the
+    old version with a new signature.
+  sec: >-
+    The system shall have a mechanism in place to prevent installation
+    of an old version of the application.  The mechanism shall use a
+    hardware feature, such as a monotonically-increasing non-volatile
+    counter to prevent flash erasure attacks from defeating it.
+  imp: >-
+    Installing an old version allows exploitation of already fixed
+    vulnerabilities.
+
+THREAT-20:
+  summary: Update server DNS attack
+  desc: >-
+    An attacker could subvert DNS, preventing the device from talking
+    to the upgrade server. This would prevent upgrades from happening
+    in a timely manner.
+  resp: >-
+    The DNS system should not be considered secure.  It is necessary
+    for the upgrade system to authenticate the upgraded images.  It is
+    not necessary to authenticate the upgrade server, only the
+    communication between the author/signer of the upgrade image and
+    the upgrade app on the device.
+  sec: >-
+    The upgrade images shall contain a manifest containing a
+    description of the target device, version information, and a
+    digital signature mechanism to verify that the image was created
+    by a trusted party.
+  imp: >-
+    Arbitrary code, or prevention of upgrade.
+
+THREAT-21:
+  summary: Invalid updates on server
+  desc: >-
+    An upgrade server could be spoofed, causing invalid images to be
+    loaded onto the device, and time taken to verify them, as well as
+    additional reboots.
+  resp: >-
+    Because images will be verified after transferring to the device,
+    there is low risk of upgrading to an invalid image.  The upgrade
+    app should verify the image before asking the bootloader to
+    install it, to prevent a reboot attack.  There is still risk to
+    consuming excessive bandwidth on the device, as well as possibly
+    limited power sending invalid images to the device.  There is a
+    tradeoff between this threat, and requiring trust in the upgrade
+    server.
+  sec: >-
+    (tradeoff) The upgrade server shall mutually authenticate with the
+    device.  The upgrade server shall be audited and monitored for
+    security vulnerabilities, and patches applied as necessary.
+  imp: >-
+    Overconsumption of limited network resources will prevent normal
+    operation of this device, as well as other devices.  Overzealous
+    updates will result in excessive battery drain, and loss of
+    operation of the device.
+
+THREAT-22:
+  summary: Spoofed upgrades
+  desc: >-
+    If the upgrade server is spoofed, devices could be tricked into
+    upgrading to a malicious image.
+  resp: >-
+    Related to THREAT-21.  The authentication of the images should be
+    sufficient to prevent the target from upgrading to a malicious
+    image.
+  sec: >-
+    The upgrade mechanism shall include a small manifest that can be
+    downloaded separately, and verified to prevent the download of the
+    full image when there is not an authentic upgrade available.
+  imp: >-
+    Overconsumption of network resources, and excessive battery drain.
+
+THREAT-23:
+  summary: LWM2M susceptible to DNS spoofing
+  desc: >-
+    The attacker could spoof a DNS server causing the client to talk
+    to a host other than the intended server.
+  resp: >-
+    Mutual authentication will mitigate against an incorrect server.
+    Further analysis should be done on the LWM2M and CoAP protocols.
+    Concerns specifically are with device provisioning.
+  sec: >-
+    The client and server of the LWM2M connection shall mutually
+    authenticate to one another.
+  imp: >-
+    This can result in either, the sensor data not being delivered
+    to the correct server, which could result in failure of equipment
+    (or harm). It could also be used as a step in an in-the-middle
+    attack, which could deliver malicious sensor data to the
+    resulting party.
+
+THREAT-24:
+  summary: LWM2M unencrypted traffic
+  desc: >-
+    The attacker could manipulate the LWM2M communication into either
+    a weak encryption, or using no encryption at all.
+  resp: >-
+    The LWM2M protocol supports non-authenticated connections, which
+    will result in insecure communication.
+  sec: >-
+    The protocol stacks shall be configured so that CoAP always uses
+    DTLS for communication.
+  imp: >-
+    Observation and spoofing of network traffic.
+
+THREAT-25:
+  summary: LWM2M system secret leaking
+  desc: >-
+    An attacker could retrieve the system secret.
+  resp: >-
+    The system secret needs to be loaded onto the device.  If it can
+    be read by an attacker, they will be able, at a minimum, to spoof
+    other devices.  The protocols need to be analyzed further to
+    understand the extent of this vulnerability.
+  sec: >-
+    The system secret shall be stored in a protected manner such that
+    a majority of the code running on the system does not have access
+    to it.
+  imp: >-
+    Spoofing of devices.
+
+THREAT-26:
+  summary: LWM2M observe initial provisioning
+  desc: >-
+    An attacker could observe network traffic during LWM2M's
+    provisioning communication.
+  resp: >-
+    LWM2M supports different provisioning procedures, such as
+    pre-shared secrets, raw public keys, and certificates.  The device
+    must have credentials for the bootstrap server.  Depending on the
+    protocols used, an attacker observing initial provisioning can
+    learn the device credentials and use this to observer later
+    traffic.
+  sec: >-
+    LWM2M/CoAP shall be provisioned to use a provisioning procedure
+    that is not susceptible to revealing credentials during
+    observation.  The stacks shall be configured to use cipher suites
+    that provide perfect forward secrecy (PFS).
+  imp: >-
+    Traffic can be visible to the attacker.  Traffic can be spoofed by
+    the attacker.
+
+THREAT-27:
+  summary: LWM2M force re-provisioning
+  desc: >-
+    An attacker could disrupt communication in a way that would
+    result in the device re-provisioning itself.
+  resp: >-
+    The LWM2M protocol will re-provision itself if it is not able to
+    communicate with the server.  If the attacker is able to spoof
+    both the server and the bootstrap server, the device would then be
+    vulnerable to a party-in-the-middle attack by the attacker.  Some
+    of this is addressed by keeping the bootstrap credentials
+    protected.
+  sec: >-
+    The LWM2M protocol shall be analyzed for the security tradeoffs
+    over automatic re-provisioning and attacks against this.
+  imp: >-
+    Interception and spoofing of communication.
+
+THREAT-28:
+  summary: LWM2M device identity tampering
+  desc: >-
+    An attacker could manipulate the device's notion of identity.
+    Many MCU's do not have unique serial numbers, and the attacker
+    could manipulate a MAC or other per-device value.
+  resp: >-
+    Related to THREAT-27.  If the identity of the device can be
+    changed, the device could be spoofed, or cause false sensor data
+    to be returned.
+  sec: >-
+    The device shall have a unique, immutable, identity that is
+    associated with the device-specific credentials.
+  imp: >-
+    Spoofing of device.
+
+THREAT-29:
+  summary: LWM2M weak random
+  desc: >-
+    An attacker could manipulate the entropy source used to generate
+    IVs and/or session keys.
+  resp: >-
+    Without a sufficient entropy source, some parameters used for
+    security protocols become vulnerable.  In general, devices should
+    have an adequate hardware entropy source.  The entropy source
+    shall not be accessible to an outside observer, as this
+    information reduces attack space.
+  sec: >-
+    The system shall be configured to use either 1. An on-chip
+    hardware entropy source, or 2. A suitable device-specific CPRNG
+    with state that is stored on the device that is a. Inaccessible to
+    outside observers, b. updated each time the state changes, c. read
+    on power up, d. initialized using a good entropy source.
+  imp: >-
+    Reduced security of cryptographic protocols.
+
+THREAT-30:
+  summary: SPI interception
+  desc: >-
+    The external sensor uses an SPI bus over external wires. An
+    attacker could intercept this signal, and either read or spoof
+    sensor data.
+  resp: >-
+    This requires physical access to the device.  It can be mitigated
+    by making these signals less accessible.
+  sec: >-
+    The hardware shall be designed to make interception of the SPI bus
+    difficult.
+  imp: >-
+    Spoofed sensor data.
+
+THREAT-31:
+  summary: Sensor manipulation
+  desc: >-
+    The external sensor can be attacked by placing, say a hot or cold
+    (or humid) source next to the sensor.
+  resp: >-
+    This threat can be considered beyond the scope of this document.
+  sec: >-
+    None
+  imp: >-
+    Spoofed sensor data.
