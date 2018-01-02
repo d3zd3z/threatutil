@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="102.5 208.496 959 463.51754" width="959pt" height="463.51754pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.5 
+    <dc:date>2017-12-11 16:25:07 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="500">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M -8 0 L 0 3 L 0 -3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" width="959" height="463.51754"/>
+    <g>
+      <title>Layer 1</title>
+      <rect x="307.5" y="208.996" width="146.5" height="63" fill="white"/>
+      <path d="M 307.5 208.996 L 454 208.996 M 454 271.996 L 307.5 271.996" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(312.5 231.272)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="49.578" y="15" textLength="37.344">Apps</tspan>
+      </text>
+      <rect x="556" y="501" width="153" height="63" fill="white"/>
+      <rect x="556" y="501" width="153" height="63" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(561 523.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="29.42" y="15" textLength="84.16">Sensor App</tspan>
+      </text>
+      <path d="M 938.6 501 L 1061 501 L 1030.4 564 L 908 564 Z" fill="white"/>
+      <path d="M 938.6 501 L 1061 501 L 1030.4 564 L 908 564 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(943.6 523.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="15.716" y="15" textLength="50.368">Sensor</tspan>
+      </text>
+      <path d="M 881.9466 289.88373 C 857.2188 286.5 867.0796 258.01455 906.5261 262.875 C 910.1858 253.40043 956.0568 254.93826 955.7569 262.875 C 984.5193 252.7238 1021.276 272.96508 996.6216 283.11627 C 1026.2057 288.03783 996.2483 314.55453 971.9688 310.125 C 970.0256 317.50797 926.6211 320.0916 922.8114 310.125 C 898.2335 320.76885 846.9846 304.40334 881.9466 289.88373 Z" fill="white"/>
+      <path d="M 881.9466 289.88373 C 857.2188 286.5 867.0796 258.01455 906.5261 262.875 C 910.1858 253.40043 956.0568 254.93826 955.7569 262.875 C 984.5193 252.7238 1021.276 272.96508 996.6216 283.11627 C 1026.2057 288.03783 996.2483 314.55453 971.9688 310.125 C 970.0256 317.50797 926.6211 320.0916 922.8114 310.125 C 898.2335 320.76885 846.9846 304.40334 881.9466 289.88373 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(889.95 268.052)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="27.214" y="15" textLength="47.12">Cloud </tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="22.038" y="33.448" textLength="53.024">Service</tspan>
+      </text>
+      <rect x="266.5" y="452.5" width="153" height="63" fill="white"/>
+      <rect x="266.5" y="452.5" width="153" height="63" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(271.5 474.776)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="31.948" y="15" textLength="79.104">Bootloader</tspan>
+      </text>
+      <rect x="549.5" y="319.5" width="153" height="63" fill="white"/>
+      <rect x="549.5" y="319.5" width="153" height="63" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(554.5 332.552)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="11.06" y="15" textLength="55.376">Softwar</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="66.148" y="15" textLength="70.24">e Update </tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="56.828" y="33.448" textLength="29.344">App</tspan>
+      </text>
+      <line x1="379.0145" y1="281.74268" x2="350.3445" y2="442.7533" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="419.5" y1="496.81606" x2="546.2361" y2="518.0482" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="558.9737" y1="382.5" x2="418.98617" y2="448.2892" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="712.1956" y1="333.20922" x2="860.4261" y2="302.61445" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="679.39875" y1="494.7971" x2="897.1693" y2="319.72666" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="923.3" y1="532.5" x2="718.9" y2="532.5" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="549.5" y1="326.43168" x2="389.42584" y2="275.02314" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="295.8145" y="328.48968" width="138" height="66" fill="white"/>
+      <text transform="translate(300.8145 333.8177)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".288" y="15" textLength="127.424">E1. Code execute</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="20.296" y="33.448" textLength="9.776">V</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="29.192" y="33.448" textLength="78.512">erify app(s)</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="37.624" y="51.895996" textLength="52.752">Update</tspan>
+      </text>
+      <rect x="408.9439" y="285.40015" width="119" height="30" fill="white"/>
+      <text transform="translate(413.9439 291.17616)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".268" y="15" textLength="108.464">E4. Install slot2</tspan>
+      </text>
+      <rect x="412.22845" y="401.21773" width="150" height="30" fill="white"/>
+      <text transform="translate(417.22845 406.99373)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".496" y="15" textLength="139.008">E3. Indicate update</tspan>
+      </text>
+      <rect x="439.76946" y="493.25326" width="96" height="30" fill="white"/>
+      <text transform="translate(444.76946 499.02926)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".328" y="15" textLength="85.344">E2. Execute</tspan>
+      </text>
+      <rect x="751.1544" y="382.71905" width="98" height="30" fill="white"/>
+      <text transform="translate(756.1544 388.49505)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".416" y="15" textLength="36.464">E6. L</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="36" y="15" textLength="51.584">WM2M</tspan>
+      </text>
+      <rect x="747.3205" y="301.56824" width="91" height="30" fill="white"/>
+      <text transform="translate(752.3205 307.34424)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".34" y="15" textLength="80.32">E5. Update</tspan>
+      </text>
+      <rect x="764.45855" y="517.5" width="101" height="30" fill="white"/>
+      <text transform="translate(769.45855 523.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".308" y="15" textLength="90.384">E7. SPI Data</tspan>
+      </text>
+      <rect x="103" y="274.612" width="146.5" height="63" fill="white"/>
+      <path d="M 103 274.612 L 249.5 274.612 M 249.5 337.612 L 103 337.612" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(108 296.888)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="28.698" y="15" textLength="79.104">Bootloader</tspan>
+      </text>
+      <rect x="556" y="608.5135" width="146.5" height="63" fill="white"/>
+      <path d="M 556 608.5135 L 702.5 608.5135 M 702.5 671.5135 L 556 671.5135" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(561 630.7895)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="19.778" y="15" textLength="8.896">L</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="27.794" y="15" textLength="88.928">WM2M keys</tspan>
+      </text>
+      <line x1="176.25" y1="337.612" x2="299.67862" y2="445.96864" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="630.2022" y1="608.5135" x2="631.2487" y2="573.8955" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="186.99189" y="381.20398" width="112" height="30" fill="white"/>
+      <text transform="translate(191.99189 386.98)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".48" y="15" textLength="101.04">Code Execute</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
