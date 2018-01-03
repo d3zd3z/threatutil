@@ -26,7 +26,7 @@ func input() {
 	// Try reading the yaml of the threats.
 	var threats map[string]*Threat
 
-	buf, err := ioutil.ReadFile("sensor.yaml")
+	buf, err := ioutil.ReadFile("threats.yaml")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -41,6 +41,7 @@ func input() {
 
 type Threat struct {
 	Summary string
+	Applies []string
 	Desc    string
 	Resp    string
 	Sec     string
@@ -58,6 +59,9 @@ func GenMD(threats map[string]*Threat) {
 	keyed := descrambleThreats(threats)
 
 	for _, th := range keyed {
+		if !th.DoesApply("sensor") {
+			continue
+		}
 		fmt.Printf("## %s: %s\n\n", th.Key, th.Summary)
 
 		fmt.Printf("%s\n\n", text.Wrap(th.Desc, 65))
@@ -103,6 +107,18 @@ func (p KeyedByKey) Less(i, j int) bool { return keyNum(p[i].Key) < keyNum(p[j].
 func (p KeyedByKey) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
 
 var keyRe = regexp.MustCompile(`^THREAT-(\d+)$`)
+
+// DoesApply determines if this threat applies to a given target.
+// This returns true iff Applies contains the given target.
+func (t *Threat) DoesApply(target string) bool {
+	for _, ap := range t.Applies {
+		if ap == target {
+			return true
+		}
+	}
+
+	return false
+}
 
 // keyNum extracts the numeric part of a key.
 // Keys are assumed to be JIRA-style in the form ALPHA-nn where 'nn'

@@ -1,5 +1,7 @@
 THREAT-1:
   summary: Code run before bootloader
+  applies:
+    - sensor
   desc: >-
     The MCU can be tricked into performing operations before the
     bootloader is run.  This can be done through a debug interface,
@@ -20,6 +22,8 @@ THREAT-1:
 
 THREAT-2:
   summary: Bootloader modification
+  applies:
+    - sensor
   desc: >-
     An attacker could modify the code of the bootloader itself.
   resp: >-
@@ -35,6 +39,8 @@ THREAT-2:
 
 THREAT-3:
   summary: Image verification could be vulnerable
+  applies:
+    - sensor
   desc: >-
     The mechanism that the bootloader uses to validate that the
     primary image is valid could be vulnerable.
@@ -51,6 +57,8 @@ THREAT-3:
 
 THREAT-4:
   summary: Root signing key leak
+  applies:
+    - sensor
   desc: >-
     The bootloader signing key could be subverted or leaked. For
     example, an attack at the factory could make a clandestine copy
@@ -70,6 +78,8 @@ THREAT-4:
 
 THREAT-5:
   summary: Code modification after signing
+  applies:
+    - sensor
   desc: >-
     Once the main application code has started running, the signature
     is not rechecked. If the code in flash is changed at this point,
@@ -87,6 +97,8 @@ THREAT-5:
 
 THREAT-6:
   summary: Insufficient Signature
+  applies:
+    - sensor
   desc: >-
     If there is any part of the image used to control the program
     counter that is not included in the signature, this could be
@@ -103,6 +115,8 @@ THREAT-6:
 
 THREAT-7:
   summary: Corrupt application image
+  applies:
+    - sensor
   desc: >-
     The main application image could be corrupted, resulting in an
     unbootable system, since the bootloader would refuse to run the
@@ -119,6 +133,8 @@ THREAT-7:
 
 THREAT-8:
   summary: Update to wrong slot
+  applies:
+    - sensor
   desc: >-
     During software update, an update application places the new
     image in a secondary slot. It could be tricked into writing
@@ -134,6 +150,8 @@ THREAT-8:
 
 THREAT-9:
   summary: Overfrequent upgrade
+  applies:
+    - sensor
   desc: >-
     The update app could be tricked into writing an image
     overly-frequently, prematurely wearing the flash device. It could
@@ -152,6 +170,8 @@ THREAT-9:
 
 THREAT-10:
   summary: Marker prevention
+  applies:
+    - sensor
   desc: >-
     The update app could be prevented from writing the update marker,
     which would prevent the update from taking place.
@@ -167,6 +187,8 @@ THREAT-10:
 
 THREAT-11:
   summary: Marker with no upgrade
+  applies:
+    - sensor
   desc: >-
     The app could be tricked into writing the update marker when
     there is no upgrade, resulting in a slower startup on subsequent
@@ -180,6 +202,8 @@ THREAT-11:
 
 THREAT-12:
   summary: Unnecessary reboots
+  applies:
+    - sensor
   desc: >-
     The update app could be tricked into rebooting unnecessarily,
     resulting in denial of service.
@@ -193,6 +217,8 @@ THREAT-12:
 
 THREAT-13:
   summary: Not reboot after upgrade
+  applies:
+    - sensor
   desc: >-
     After an upgrade has been downloaded, the upgrade app must
     reboot the device to install the update. If it could be tricked
@@ -207,6 +233,8 @@ THREAT-13:
 
 THREAT-14:
   summary: Corrupt upgrade
+  applies:
+    - sensor
   desc: >-
     If the image in the second slot is corrupt, the bootloader may
     take additional time to verify that the signature is invalid.
@@ -220,6 +248,8 @@ THREAT-14:
 
 THREAT-15:
   summary: Bootloader defects
+  applies:
+    - sensor
   desc: >-
     Defects in the bootloader could result in a corrupt main image,
     resulting in an unbootable system.
@@ -238,6 +268,8 @@ THREAT-15:
 
 THREAT-16:
   summary: Swap code defects
+  applies:
+    - sensor
   desc: >-
     Defects in the image swapping code could allow an untimely power
     loss to result in either a corrupt/unbootable image, or the wrong
@@ -257,6 +289,8 @@ THREAT-16:
 
 THREAT-17:
   summary: Missed upgrade
+  applies:
+    - sensor
   desc: >-
     After an upgrade, the bootloader gives the application a test
     boot. If it does not mark itself as good, the bootloader will
@@ -278,6 +312,8 @@ THREAT-17:
 
 THREAT-18:
   summary: Upgrade storm
+  applies:
+    - sensor
   desc: >-
     If after a rollback, the system immediately detects that an
     upgrade is available, it could result in a device that upgrades
@@ -294,6 +330,8 @@ THREAT-18:
 
 THREAT-19:
   summary: Anti-rollback
+  applies:
+    - sensor
   desc: >-
     An older image could be sent as an upgrade, causing the
     bootloader to downgrade to an older version, possibly reverting
@@ -313,6 +351,8 @@ THREAT-19:
 
 THREAT-20:
   summary: Update server DNS attack
+  applies:
+    - sensor
   desc: >-
     An attacker could subvert DNS, preventing the device from talking
     to the upgrade server. This would prevent upgrades from happening
@@ -333,6 +373,8 @@ THREAT-20:
 
 THREAT-21:
   summary: Invalid updates on server
+  applies:
+    - sensor
   desc: >-
     An upgrade server could be spoofed, causing invalid images to be
     loaded onto the device, and time taken to verify them, as well as
@@ -358,6 +400,8 @@ THREAT-21:
 
 THREAT-22:
   summary: Spoofed upgrades
+  applies:
+    - sensor
   desc: >-
     If the upgrade server is spoofed, devices could be tricked into
     upgrading to a malicious image.
@@ -374,6 +418,8 @@ THREAT-22:
 
 THREAT-23:
   summary: LWM2M susceptible to DNS spoofing
+  applies:
+    - sensor
   desc: >-
     The attacker could spoof a DNS server causing the client to talk
     to a host other than the intended server.
@@ -393,6 +439,8 @@ THREAT-23:
 
 THREAT-24:
   summary: LWM2M unencrypted traffic
+  applies:
+    - sensor
   desc: >-
     The attacker could manipulate the LWM2M communication into either
     a weak encryption, or using no encryption at all.
@@ -407,6 +455,8 @@ THREAT-24:
 
 THREAT-25:
   summary: LWM2M system secret leaking
+  applies:
+    - sensor
   desc: >-
     An attacker could retrieve the system secret.
   resp: >-
@@ -423,6 +473,8 @@ THREAT-25:
 
 THREAT-26:
   summary: LWM2M observe initial provisioning
+  applies:
+    - sensor
   desc: >-
     An attacker could observe network traffic during LWM2M's
     provisioning communication.
@@ -444,6 +496,8 @@ THREAT-26:
 
 THREAT-27:
   summary: LWM2M force re-provisioning
+  applies:
+    - sensor
   desc: >-
     An attacker could disrupt communication in a way that would
     result in the device re-provisioning itself.
@@ -462,6 +516,8 @@ THREAT-27:
 
 THREAT-28:
   summary: LWM2M device identity tampering
+  applies:
+    - sensor
   desc: >-
     An attacker could manipulate the device's notion of identity.
     Many MCU's do not have unique serial numbers, and the attacker
@@ -478,6 +534,8 @@ THREAT-28:
 
 THREAT-29:
   summary: LWM2M weak random
+  applies:
+    - sensor
   desc: >-
     An attacker could manipulate the entropy source used to generate
     IVs and/or session keys.
@@ -498,6 +556,8 @@ THREAT-29:
 
 THREAT-30:
   summary: SPI interception
+  applies:
+    - sensor
   desc: >-
     The external sensor uses an SPI bus over external wires. An
     attacker could intercept this signal, and either read or spoof
@@ -513,6 +573,8 @@ THREAT-30:
 
 THREAT-31:
   summary: Sensor manipulation
+  applies:
+    - sensor
   desc: >-
     The external sensor can be attacked by placing, say a hot or cold
     (or humid) source next to the sensor.
