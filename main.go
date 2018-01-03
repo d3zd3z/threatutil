@@ -1,9 +1,23 @@
 // Threatutil
 //
-// This program performs some useful operations on JIRA to help with
-// threat modeling.  JIRA is a reasonably good fit for this
-// information, but doesn't necessarily generate useful output for a
-// report.
+// Copyright 2017-2018 Linaro Limited
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// This program provides utilities for managing the threat model
+// included in this package.  The threat model is a yaml file/database
+// enumerating a set of threats.  This program helps extract specific
+// aspects of these threats to produce documentation.
 package main
 
 import (
