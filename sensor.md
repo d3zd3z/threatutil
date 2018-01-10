@@ -13,6 +13,8 @@ This first diagram gives a simple overview of this sensor device,
 along with how information flows from one part of the system to
 another.
 
+![Sensor device](sensor-model.svg)
+
 - FLASH: The flash memory holds all of the executable code in the
   system, including both the immutable bootloader as well as the two
   apps (or parts of the app).  In addition, this flash will have an
@@ -33,6 +35,11 @@ another.
   from the cloud, storing it in an extra slot in the FLASH, and when
   ready for update, marks it in such a way that the bootloader knows
   to perform the update.
+
+In addition, by replacing the highlighted sections, we can consider
+alternative protocols.
+
+![Sensor device and protocols](sensor-model-proto.svg)
 
 ## Assumptions
 
