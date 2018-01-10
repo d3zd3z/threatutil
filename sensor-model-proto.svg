@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="102 208 960 476" width="80pc" height="476pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata> Produced by OmniGraffle 7.5 
-    <dc:date>2018-01-10 00:23:20 +0000</dc:date>
+    <dc:date>2018-01-10 00:59:40 +0000</dc:date>
   </metadata>
   <defs>
     <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="500">
@@ -28,7 +28,7 @@
   </defs>
   <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
     <title>sensor</title>
-    <rect fill="white" width="959" height="475.26754"/>
+    <rect fill="white" width="959" height="463.51754"/>
     <g>
       <title>sensor-drawing</title>
       <rect x="307.5" y="208.996" width="146.5" height="63" fill="white"/>
