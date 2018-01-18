@@ -2,12 +2,16 @@
 
 ## Overview
 
-This document describes a threat model for a sensor device, running an
-application on top of Zephyr.  This device consists of an MCU (such as
-an STM32L or NXP K64F type device) connected to an SPI sensor
-reporting something such as temperature.  The device reports this data
-to a service over the LWM2M protocol over a wireless interface to a
-gateway or cloud service.
+This document describes a threat model for a sensor/actuator device,
+running an application on top of Zephyr.  This device consists of an
+MCU (such as an STM32L or NXP K64F type device) connected to an SPI
+sensor reporting something such as temperature.  The device reports
+this data to a service over the LWM2M protocol over a wireless
+interface to a gateway or cloud service.
+
+Some of these aspects can be exchanged to produce very similar models.
+For example, a gpio interface device instead of an SPI interface would
+be able to use this mode.
 
 This first diagram gives a simple overview of this sensor device,
 along with how information flows from one part of the system to

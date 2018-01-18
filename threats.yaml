@@ -599,3 +599,18 @@ THREAT-31:
     None
   imp: >-
     Spoofed sensor data.
+
+THREAT-32:
+  summary: actuator signal interception
+  applies:
+    - actuator
+  desc: >-
+    The actuator is controlled through a controller connected via SPI
+    bus, and/or via GPIOs.  If these signals are physically
+    intercepted, the attacker can directly control these devices.
+  resp: >-
+    This threat can be considered beyond the scope of this document.
+  sec: >-
+    None
+  imp: >-
+    Attacker control of sensors.
