@@ -13,6 +13,9 @@ Some of these aspects can be exchanged to produce very similar models.
 For example, a gpio interface device instead of an SPI interface would
 be able to use this mode.
 
+In addition, it is possible to use protocols other than LWM2M.  A
+separate analysis will cover other protocols in this configuration.
+
 This first diagram gives a simple overview of this sensor device,
 along with how information flows from one part of the system to
 another.
