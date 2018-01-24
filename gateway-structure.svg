@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="189 42 1480 600" width="1480pt" height="50pc" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.5 
+    <dc:date>2018-01-23 21:42:44 +0000</dc:date>
+  </metadata>
+  <defs>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white"/>
+      <stop offset="1" stop-color="#6bced6"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(1329.184 139.18291) rotate(50) scale(364.2404)"/>
+    <linearGradient id="Obj_Gradient_2" xl:href="#Gradient" gradientTransform="translate(1329.184 348.23782) rotate(50) scale(364.2404)"/>
+    <linearGradient x1="0" x2="1" id="Gradient_2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white"/>
+      <stop offset="1" stop-color="#7fd6be"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient_3" xl:href="#Gradient_2" gradientTransform="translate(388.29986 8.86531) rotate(50) scale(907.6097)"/>
+    <linearGradient id="Obj_Gradient_4" xl:href="#Gradient" gradientTransform="translate(1329.184 -45.762175) rotate(50) scale(364.2404)"/>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="500">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M -8 0 L 0 3 L 0 -3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" width="1479.5" height="599.5"/>
+    <g>
+      <title>Layer 1</title>
+      <rect x="1223.9972" y="227.4451" width="444.50276" height="102.5" fill="url(#Obj_Gradient)"/>
+      <path d="M 1223.9972 227.4451 L 1668.5 227.4451 L 1668.5 329.9451 L 1223.9972 329.9451 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <rect x="1223.9972" y="436.5" width="444.50276" height="102.5" fill="url(#Obj_Gradient_2)"/>
+      <path d="M 1223.9972 436.5 L 1668.5 436.5 L 1668.5 539 L 1223.9972 539 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <rect x="191.5" y="174" width="977" height="365" fill="url(#Obj_Gradient_3)"/>
+      <rect x="191.5" y="174" width="977" height="365" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <rect x="1223.9972" y="42.5" width="444.50276" height="102.5" fill="url(#Obj_Gradient_4)"/>
+      <path d="M 1223.9972 42.5 L 1668.5 42.5 L 1668.5 145 L 1223.9972 145 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <path d="M 212 186.5 L 663 186.5 L 663 498.5 L 212 498.5 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <text transform="translate(224.5 504.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".468" y="15" textLength="106.064">Linux Gateway</tspan>
+      </text>
+      <rect x="462.2966" y="381.5" width="181.5" height="83.5" fill="#ffffc0"/>
+      <rect x="462.2966" y="381.5" width="181.5" height="83.5" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(467.2966 404.802)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="53.294" y="15" textLength="64.912">(1-8) A53</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="37.438" y="33.448" textLength="96.624">running Linux</tspan>
+      </text>
+      <rect x="224.0753" y="314.5" width="146.5" height="63" fill="#ffffc0"/>
+      <path d="M 224.0753 314.5 L 370.5753 314.5 M 370.5753 377.5 L 224.0753 377.5" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(229.0753 336.776)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="43.65" y="15" textLength="49.2">EMMC</tspan>
+      </text>
+      <rect x="224.0753" y="409.5" width="146.5" height="63" fill="#ffffc0"/>
+      <path d="M 224.0753 409.5 L 370.5753 409.5 M 370.5753 472.5 L 224.0753 472.5" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(229.0753 431.776)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="44.986" y="15" textLength="46.528">DRAM</tspan>
+      </text>
+      <line x1="379.69196" y1="349.8596" x2="453.17995" y2="380.97103" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="380.4288" y1="440.0415" x2="452.44313" y2="433.03626" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="462.83764" y="218" width="181.5" height="83.5" fill="#ffffc0"/>
+      <rect x="462.83764" y="218" width="181.5" height="83.5" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(467.83764 250.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="41.294" y="15" textLength="88.912">WiFi module</tspan>
+      </text>
+      <line x1="553.4167" y1="311.39995" x2="553.2175" y2="371.60005" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="763.47315" y="381.5" width="181.5" height="83.5" fill="#c0c0ff"/>
+      <rect x="763.47315" y="381.5" width="181.5" height="83.5" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(768.47315 414.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="44.262" y="15" textLength="82.976">Cortex v7m</tspan>
+      </text>
+      <rect x="763.47315" y="218" width="181.5" height="83.5" fill="#c0c0ff"/>
+      <rect x="763.47315" y="218" width="181.5" height="83.5" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(768.47315 250.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="70.934" y="15" textLength="29.632">BLE</tspan>
+      </text>
+      <line x1="653.6966" y1="423.25" x2="753.57315" y2="423.25" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="854.2232" y1="371.6" x2="854.2232" y2="311.4" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="463.05374" y="42.5" width="181.5" height="83.5" fill="#ffc0c0"/>
+      <rect x="463.05374" y="42.5" width="181.5" height="83.5" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(468.05374 75.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="40.998" y="15" textLength="52.752">Home r</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="93.462" y="15" textLength="37.04">outer</tspan>
+      </text>
+      <line x1="553.74014" y1="135.9" x2="553.65124" y2="208.1" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="1,4"/>
+      <path d="M 243.1745 88.73478 C 219.49717 84.25 228.9391 46.495475 266.70972 52.9375 C 270.214 40.379935 314.13617 42.41817 313.84903 52.9375 C 341.38956 39.483145 376.58472 66.31086 352.9777 79.765215 C 381.30495 86.28824 352.62025 121.43338 329.37217 115.5625 C 327.5116 125.34786 285.95103 128.7722 282.30318 115.5625 C 258.76942 129.66982 209.69778 107.97903 243.1745 88.73478 Z" fill="#ffc0c0"/>
+      <path d="M 243.1745 88.73478 C 219.49717 84.25 228.9391 46.495475 266.70972 52.9375 C 270.214 40.379935 314.13617 42.41817 313.84903 52.9375 C 341.38956 39.483145 376.58472 66.31086 352.9777 79.765215 C 381.30495 86.28824 352.62025 121.43338 329.37217 115.5625 C 327.5116 125.34786 285.95103 128.7722 282.30318 115.5625 C 258.76942 129.66982 209.69778 107.97903 243.1745 88.73478 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(251.0503 75.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="3.307" y="15" textLength="63.12">The Inter</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x="66.715" y="15" textLength="22.528">net</tspan>
+      </text>
+      <line x1="453.15374" y1="84.25" x2="371.84726" y2="84.25" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="1231.4048" y="53" width="181.5" height="83.5" fill="#c0ffc0"/>
+      <rect x="1231.4048" y="53" width="181.5" height="83.5" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1236.4048 85.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="53.75" y="15" textLength="64">IoT MCU</tspan>
+      </text>
+      <rect x="1231.4048" y="236.9451" width="181.5" height="83.5" fill="#c0ffc0"/>
+      <rect x="1231.4048" y="236.9451" width="181.5" height="83.5" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1236.4048 269.4711)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="53.75" y="15" textLength="64">IoT MCU</tspan>
+      </text>
+      <rect x="1231.4048" y="444.38694" width="181.5" height="83.5" fill="#c0ffc0"/>
+      <rect x="1231.4048" y="444.38694" width="181.5" height="83.5" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1236.4048 476.91294)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="53.75" y="15" textLength="64">IoT MCU</tspan>
+      </text>
+      <line x1="954.3097" y1="224.45792" x2="1222.0682" y2="130.04208" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="1,4"/>
+      <line x1="954.865" y1="263.82468" x2="1221.5129" y2="274.6204" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="1,4"/>
+      <line x1="949.4303" y1="305.81157" x2="1226.9476" y2="440.07537" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="1,4"/>
+      <path d="M 742.3344 186.5 L 1154.3344 186.5 L 1154.3344 498.5 L 742.3344 498.5 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <text transform="translate(747.3344 504.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="5.302" y="15" textLength="160.896">Zephyr BLE Peripheral</tspan>
+      </text>
+      <rect x="990.6119" y="336.252" width="146.5" height="63" fill="#c0c0ff"/>
+      <path d="M 990.6119 336.252 L 1137.1119 336.252 M 1137.1119 399.252 L 990.6119 399.252" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(995.6119 358.528)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="43.65" y="15" textLength="49.2">EMMC</tspan>
+      </text>
+      <line x1="981.442" y1="371.48334" x2="954.1431" y2="382.59154" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="990.6119" y="422" width="146.5" height="63" fill="#c0c0ff"/>
+      <path d="M 990.6119 422 L 1137.1119 422 M 1137.1119 485 L 990.6119 485" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(995.6119 444.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="45.434" y="15" textLength="45.632">SRAM</tspan>
+      </text>
+      <line x1="980.9467" y1="451.35635" x2="954.6383" y2="445.52133" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1319.6548 360.21494)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".276" y="15" textLength="4.448">.</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".276" y="33.448" textLength="4.448">.</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".276" y="51.895996" textLength="4.448">.</tspan>
+      </text>
+      <path d="M 1514.5472 53 L 1659.7472 53 L 1623.4472 136.5 L 1478.2472 136.5 Z" fill="#c0ffc0"/>
+      <path d="M 1514.5472 53 L 1659.7472 53 L 1623.4472 136.5 L 1478.2472 136.5 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1519.5472 85.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="24.266" y="15" textLength="50.368">Sensor</tspan>
+      </text>
+      <rect x="686.5656" y="408.25" width="35" height="30" fill="white"/>
+      <text transform="translate(691.5656 414.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x=".06" y="15" textLength="24.88">SPI</tspan>
+      </text>
+      <rect x="532.7181" y="138.78596" width="42" height="30" fill="white"/>
+      <text transform="translate(537.7181 144.56196)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x=".448" y="15" textLength="31.104">WiFi</tspan>
+      </text>
+      <rect x="1150.034" y="133.39018" width="40" height="30" fill="white"/>
+      <text transform="translate(1155.034 139.16618)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x=".184" y="15" textLength="29.632">BLE</tspan>
+      </text>
+      <rect x="1171.3827" y="258.40054" width="40" height="30" fill="white"/>
+      <text transform="translate(1176.3827 264.17654)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x=".184" y="15" textLength="29.632">BLE</tspan>
+      </text>
+      <rect x="1175.7373" y="409.97573" width="40" height="30" fill="white"/>
+      <text transform="translate(1180.7373 415.75174)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" fill="black" x=".184" y="15" textLength="29.632">BLE</tspan>
+      </text>
+      <path d="M 1514.5472 236.9451 L 1659.7472 236.9451 L 1623.4472 320.4451 L 1478.2472 320.4451 Z" fill="#c0ffc0"/>
+      <path d="M 1514.5472 236.9451 L 1659.7472 236.9451 L 1623.4472 320.4451 L 1478.2472 320.4451 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1519.5472 269.4711)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="18.93" y="15" textLength="61.04">Actuator</tspan>
+      </text>
+      <path d="M 1514.5472 444.38694 L 1659.7472 444.38694 L 1623.4472 527.88694 L 1478.2472 527.88694 Z" fill="#c0ffc0"/>
+      <path d="M 1514.5472 444.38694 L 1659.7472 444.38694 L 1623.4472 527.88694 L 1478.2472 527.88694 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1519.5472 476.91294)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="29.442" y="15" textLength="40.016">Other</tspan>
+      </text>
+      <text transform="translate(1566.4972 360.21494)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".276" y="15" textLength="4.448">.</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".276" y="33.448" textLength="4.448">.</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".276" y="51.895996" textLength="4.448">.</tspan>
+      </text>
+      <line x1="1412.9048" y1="94.75" x2="1486.4972" y2="94.75" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1496.3972" y1="278.6951" x2="1422.8048" y2="278.6951" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1422.8048" y1="486.13694" x2="1486.4972" y2="486.13694" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(196.5 544.776)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".436" y="15" textLength="116.128">Gateway Device</tspan>
+      </text>
+      <text transform="translate(1228.9972 150.776)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".224" y="15" textLength="75.552">IoT Device</tspan>
+      </text>
+      <text transform="translate(1228.9972 335.7211)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".224" y="15" textLength="75.552">IoT Device</tspan>
+      </text>
+      <text transform="translate(1228.9972 544.776)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".224" y="15" textLength="75.552">IoT Device</tspan>
+      </text>
+      <rect x="851.3344" y="617.02746" width="35" height="18.94509" fill="white"/>
+      <rect x="851.3344" y="617.02746" width="35" height="18.94509" stroke="#b1001c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <text transform="translate(897.3344 617.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".076" y="15" textLength="23.408">Thr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="23.196" y="15" textLength="119.728">eat Model Focus</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
