@@ -100,6 +100,40 @@ have been identified:
 	source, and adjust parameters, such as how much entropy needs
 	to be stirred into a pool to ensure an adequate initial state.
 
+## Policy
+
+Below is the policy for this model.
+
+### POLICY-1: Normal boot
+
+Upon power up, the system should boot code programmed into internal
+device flash.  This code should execute the **application**.
+
+### POLICY-2: Sensor processing
+
+This **application** should collect sensor data and report it to the
+correct host.
+
+### POLICY-3: Over the air upgrades
+
+The **application** should also accept upgrades from a valid upgrade
+host and see to running this new version of the code.
+
+### POLICY-4: Valid upgrades
+
+Only upgrades approved by an approved party should be allowed to be
+installed into the system.
+
+### POLICY-5: Spoofing
+
+The data collection host should be able to determine that a given
+sensor device is valid, and only accept data from valid sensors.
+
+### POLICY-6: Availability
+
+When sensor data is available, it should be sent to the data
+collection host in a timely manner.
+
 ## Threat enumeration
 
 Below is an enumeration of the threats.  Note that this section is
